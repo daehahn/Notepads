@@ -56,6 +56,7 @@ namespace Notepads.Utilities
             { 51949,   "Korean (euc-kr)" },
             { 949,     "Korean (ks_c_5601-1987)" },
             { 50225,   "Korean (iso-2022-kr)" },
+            { 1361,    "Korean (Johap)" },
             { 865,     "Nordic DOS (IBM865)" },
             { 936,     "Simplified Chinese (gb2312)" },
             { 54936,   "Simplified Chinese (GB18030)" },
