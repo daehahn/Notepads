@@ -582,6 +582,13 @@ namespace Notepads.Views.MainPage
                         {
                             encoding = detectedEncoding;
                         }
+                        else if (EncodingUtility.TryGetSystemDefaultANSIEncoding(out var currentEncoding))
+                        {
+                            if (currentEncoding.CodePage == 949)    // if Korean (Wansung), try Korean (Johap)
+                            {
+                                encoding = EncodingUtility.GetEncodingByName("Korean (Johap)");
+                            }
+                        }                        
                     }
                 }
                 catch (Exception)
